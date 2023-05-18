@@ -1,0 +1,34 @@
+# Visual Studio files
+.vs/
+bin/
+obj/
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# NuGet packages
+*.nupkg
+*.snupkg
+**/packages/
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+
+# Rider IDE
+.idea/
+
+# Resharper-specific files
+_ReSharper*/
+*.resharper*
+*.DotSettings.user
+
+# Test Results
+[Tt]est[Rr]esult*/
+*.trx
