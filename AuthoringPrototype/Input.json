@@ -1,0 +1,37 @@
+{
+  "foo/bar": 
+    [
+      {
+        "Methods": [ "GET", "POST" ],
+        "Permissions": [ "Foo.Read.All", "Foo.ReadWrite.All" ],
+        "Schemes": [ "Delegated"]
+      },
+      {
+        "Methods": [ "GET"],
+        "Permissions": [ "Foo.Read.All", "Foo.ReadWrite.All" ],
+        "Schemes": [ "Application" ]
+      }
+    ]
+  ,
+  "foo/bar/{id}": [
+    {
+      "Methods": [ "GET", "PATCH" ],
+      "Permissions": [ "Foo.ReadWrite.All" ],
+      "Schemes": [ "Delegated", "Application" ]
+    }
+  ],
+  "foo/bar/baz": [
+    {
+      "Methods": [ "GET", "POST" ],
+      "Permissions": [ "Foo.Read.All", "Foo.ReadWrite.All" ],
+      "Schemes": [ "Delegated", "Application" ]
+    }
+  ],
+  "bar": [
+    {
+      "Methods": [ "GET" ],
+      "Permissions": [ "Foo.Read.All" ],
+      "Schemes": [ "Delegated", "Application" ]
+    }
+  ]
+}
